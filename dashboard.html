@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Dashboard - BrightSteps</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="upload.html">Upload</a></li>
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        </ul>
+    </nav>
+    <h1>BrightSteps</h1>
+    </header>
+
+    <main>
+        <section id="studentCount">
+            <h2>Total Number of Registered Students</h2>
+            <p id="studentCountValue">Loading...</p>
+        </section>
+        <section id="assignmentStatus">
+            <h2>Resource Status</h2>
+            <p>Total Assignments: <span id="totalAssignments">Loading...</span></p>
+            <p>Assignments Completed: <span id="completedAssignments">Loading...</span></p>
+            <p>Assignments Pending: <span id="pendingAssignments">Loading...</span></p>
+        </section>
+        <section id="scorecard">
+            <h2>Scorecard</h2>
+            <div class="score">
+                <h3>Total Registered Students</h3>
+                <p id="studentCount">Loading...</p>
+            </div>
+            <div class="score">
+                <h3>Total Assignments Completed</h3>
+                <p id="completedAssignments">Loading...</p>
+            </div>
+            <div class="score">
+                <h3>Assignment Completion Rate</h3>
+                <p id="completionRate">Loading...</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 BrightSteps</p>
+    </footer>
+    <script src="dashboard.js"></script>
+</body>
+</html>
